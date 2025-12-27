@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling dice</title>
+</head>
+<body>
+    <h1 style="margin-left: 150px;">Rolling dice</h1>
+    <div id="rollingdice" style="width: 200px; height: 200px; border: solid; background-color: rgb(127, 255, 172); border: 2px; margin-left: 150px; font-size: 150px;">
+        <p id="p1"></p>
+    </div><br><br>
+    <button style="background-color: aquamarine; margin-left: 200px; width: 100px; height: 50px; font-size: medium; font-style: italic;" onclick="randomNumber">Lets Roll!!!</button>
+    <script>
+        var number=Math.floor(Math.random()*6)
+        function randomNumber(){
+        document.getElementById("p1").innerHTML=number
+        }
+    </script>
+</body>
+</html>
